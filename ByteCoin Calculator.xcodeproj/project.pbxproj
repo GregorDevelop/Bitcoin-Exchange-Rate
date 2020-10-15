@@ -61,13 +61,37 @@
 			children = (
 				B096B7B725383EF000E0B807 /* AppDelegate.swift */,
 				B096B7B925383EF000E0B807 /* SceneDelegate.swift */,
-				B096B7BB25383EF000E0B807 /* ViewController.swift */,
-				B096B7BD25383EF000E0B807 /* Main.storyboard */,
+				B096B7CF2538402300E0B807 /* Models */,
+				B096B7D12538403C00E0B807 /* Views */,
+				B096B7D02538402C00E0B807 /* Controllers */,
 				B096B7C025383EF100E0B807 /* Assets.xcassets */,
 				B096B7C225383EF100E0B807 /* LaunchScreen.storyboard */,
 				B096B7C525383EF100E0B807 /* Info.plist */,
 			);
 			path = "ByteCoin Calculator";
+			sourceTree = "<group>";
+		};
+		B096B7CF2538402300E0B807 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B096B7D02538402C00E0B807 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B096B7BB25383EF000E0B807 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B096B7D12538403C00E0B807 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B096B7BD25383EF000E0B807 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
