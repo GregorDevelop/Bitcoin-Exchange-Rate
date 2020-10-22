@@ -35,7 +35,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-j4-UDb">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-j4-UDb" userLabel="Coin View">
                                         <rect key="frame" x="17" y="85" width="380" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-1n-ZCa">
@@ -51,13 +51,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyA-By-4MT">
                                                         <rect key="frame" x="90" y="25" width="219.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nec-nN-0kY">
                                                         <rect key="frame" x="319.5" y="25" width="50.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -75,6 +75,11 @@
                                             <constraint firstItem="dbD-1n-ZCa" firstAttribute="leading" secondItem="U1v-j4-UDb" secondAttribute="leading" id="gVk-iv-n2x"/>
                                             <constraint firstItem="dbD-1n-ZCa" firstAttribute="top" secondItem="U1v-j4-UDb" secondAttribute="top" id="t7f-z4-zgw"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -90,6 +95,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="CyA-By-4MT" id="2J0-ac-fQO"/>
+                        <outlet property="currencyLabel" destination="Nec-nN-0kY" id="qsN-i8-Z1N"/>
+                        <outlet property="currencyPicker" destination="N5z-C6-dMh" id="afj-go-GPK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
